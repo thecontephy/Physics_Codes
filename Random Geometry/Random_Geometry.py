@@ -1,12 +1,6 @@
-########################################################################################################
-#########################################--------PYL 204 Assig #4.----------#######################################
-########################################################################################################
-
-
 import math  # Importing
 import random  # Libraries
 
-########################################################################################################
 # Asking for Parameters
 p = int(input("Enter the number of different species  "))
 K = {}
@@ -25,9 +19,8 @@ g2 = int(input("Enter the number of Two Dimensional Geometries  "))
 g3 = int(input("Enter the number of Three Dimensional Geometries  "))
 tol = float(input("Enter the minimum spacing between atoms in (0.05-0.2)Angstrom  "))
 
-########################################################################################################
-# One Dimensional Geometries with the overlapping condition set to 1 Angstrom
-# Range of region varies from 0 to n Angstrom
+# One Dimensional Geometries 
+# Range of region varies from 0 to 2*n Angstrom
 G1 = {}
 flag = 0
 for i in range(g1):
@@ -44,9 +37,8 @@ for i in range(g1):
                             G1[i][j][2] - G1[i][k][2]) ** 2)
                     if dist < tol:
                         condition = True
-########################################################################################################
-# Two Dimensional Geometries with the overlapping condition set to 1 Angstrom
-# Range of region varies from 0 to n Angstrom
+# Two Dimensional Geometries
+# Range of region varies from 0 to 2*n Angstrom
 G2 = {}
 flag = 0
 for i in range(g2):
@@ -63,9 +55,8 @@ for i in range(g2):
                             G2[i][j][2] - G2[i][k][2]) ** 2)
                     if dist < tol:
                         condition = True
-########################################################################################################
-# Three Dimensional Geometries with the overlapping condition set to 1 Angstrom
-# Range of region varies from 0 to n Angstrom
+# Three Dimensional Geometries
+# Range of region varies from 0 to 2*n Angstrom
 G3 = {}
 flag = 0
 for i in range(g3):
@@ -82,7 +73,6 @@ for i in range(g3):
                             G3[i][j][2] - G3[i][k][2]) ** 2)
                     if dist < tol:
                         condition = True
-########################################################################################################
 # Printing the results
 print("\n")
 print("One Dimensional Geometries are: ")
