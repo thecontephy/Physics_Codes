@@ -17,7 +17,7 @@ print("\n")
 g1 = int(input("Enter the number of One Dimensional Geometries  "))
 g2 = int(input("Enter the number of Two Dimensional Geometries  "))
 g3 = int(input("Enter the number of Three Dimensional Geometries  "))
-tol = float(input("Enter the minimum spacing between atoms in (0.05-0.2)Angstrom  "))
+tol = float(input("Enter the minimum spacing between atoms in (0.05-0.2)Angstrom"))
 
 # One Dimensional Geometries 
 # Range of region varies from 0 to 2*n Angstrom
