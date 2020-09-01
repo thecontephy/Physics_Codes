@@ -2,7 +2,7 @@ import math  # Importing
 import random  # Libraries
 
 # Asking for Parameters
-p = int(input("Enter the number of different species  "))
+p = int(input("Enter the number of different species"))
 K = {}
 n = 0
 print("Input details fo all the different species:")
