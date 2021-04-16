@@ -7,7 +7,7 @@ from keras.models import Sequential
 from keras.layers.core import Dense, Dropout
 
 
-df = pd.read_csv('199data_points.csv')
+df = pd.read_csv('material__data.csv')
 
 x_array1 = df[["effective hole mass"]].to_numpy()
 x_array2 = df[["min of e.n. diff"]].to_numpy()
